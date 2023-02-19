@@ -1,10 +1,12 @@
 #include <stdio>
 /**
- * main - prints out a string to stdout
- * Return : 0
+ * Main - prints out a string to stdout
+ *
+ * Return : 0 (success)
  */
-int main (void)
+int main(void)
 {
-	printf("withproper grammer,but the outcome is a piece of art,\n");
-	return (0);
-}	
+printf("with proper grammer,but the outcome is a piece of art,\n");
+return (0);
+}
+

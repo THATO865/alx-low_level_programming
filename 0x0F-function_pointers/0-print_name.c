@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <functions_pointers.h>
 
 /**
  * print_name - execute a function given as a parameter

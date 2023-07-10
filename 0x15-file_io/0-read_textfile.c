@@ -8,32 +8,33 @@
  *
  * Return: actual number of letters it could read and print
  */
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-    FILE *fp;
-    char *buffer;
-    ssize_t read_chars;
+FILE *fp;
+char *buffer;
+ssize_t read_chars;
 
-    if (filename == NULL)
-        return (0);
+if (filename == NULL)
+return (0);
 
-    fp = fopen(filename, "r");
-    if (fp == NULL)
-        return (0);
+fp = fopen(filename, "r");
+if (fp == NULL)
+return (0);
 
-    buffer = malloc(sizeof(char) * letters);
-    if (buffer == NULL)
-        return (0);
+buffer = malloc(sizeof(char) * letters);
+if (buffer == NULL)
+return (0);
 
-    read_chars = fread(buffer, sizeof(char), letters, fp);
-    if (read_chars == 0)
-        return (0);
+read_chars = fread(buffer, sizeof(char), letters, fp);
+if (read_chars == 0)
+return (0);
 
-    printf("%s", buffer);
+printf("%s", buffer);
 
-    fclose(fp);
-    free(buffer);
+fclose(fp);
+free(buffer);
 
-    return (read_chars);
+return (read_chars);
 }
 

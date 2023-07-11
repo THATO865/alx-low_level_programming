@@ -32,8 +32,9 @@ return (0);
 
 printf("%s", buffer);
 
+fclose(fp);
 free(buffer);
-close(fd);
+
 
 return (read_chars);
 }
